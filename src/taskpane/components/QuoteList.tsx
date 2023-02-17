@@ -1,45 +1,5 @@
 import * as React from "react";
 
-/* global require, console */
-
-/*
-var jsforce = require("jsforce");
-
-var conn = new jsforce.Connection({
-  loginUrl: "https://fuzelogistics1234--sbincloud.sandbox.my.salesforce.com",
-});
-
-conn.login(
-  "fuzedev@fuzelogistics.com.sbincloud",
-  "Fuze1234$",
-  function (err: any, userInfo: { id: string; organizationId: string }) {
-    if (err) {
-      return console.error(err);
-    }
-    // Now you can get the access token and instance URL information.
-    // Save them to establish connection next time.
-    console.log(conn.accessToken);
-    console.log(conn.instanceUrl);
-    // logged in user property
-    console.log("User ID: " + userInfo.id);
-    console.log("Org ID: " + userInfo.organizationId);
-    // ...
-  }
-);
-
-//var records = [];
-conn.query(
-  "SELECT Id, Name FROM Account",
-  function (err: any, result: { totalSize: string; records: { length: string } }) {
-    if (err) {
-      return console.error(err);
-    }
-    console.log("total : " + result.totalSize);
-    console.log("fetched : " + result.records.length);
-  }
-);
-*/
-
 export interface QuoteListProps {
   message: string;
   items: string[];
