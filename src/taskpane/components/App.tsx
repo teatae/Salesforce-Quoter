@@ -29,7 +29,12 @@ export default class App extends React.Component<AppProps, AppState> {
       fetch: false,
     };
   }
-
+  /*
+  var jsforce = require("jsforce");
+  var conn = new jsforce.Connection({
+    loginUrl: "https://fuzelogistics1234--sbincloud.sandbox.my.salesforce.com",
+  });
+  */
   componentDidMount() {
     this.setState({
       fieldMessage: "Salesforces Intergration!",
