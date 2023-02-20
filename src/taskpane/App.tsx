@@ -1,9 +1,9 @@
 import * as React from "react";
 //import { Link, Route, Routes } from "react-router-dom";
-import { Fields } from "./FieldList";
-import Page from "./Page";
-import Header from "./Header";
-import Progress from "./Progress";
+import { Fields } from "./components/FieldList";
+import Page from "./components/Page";
+import Header from "./components/Header";
+import Progress from "./components/Progress";
 
 /* global document, console, require */
 
@@ -87,14 +87,14 @@ export default class App extends React.Component<AppProps, AppState> {
       return (
         <Progress
           title={title}
-          logo={require("./../../../assets/logo-filled.png")}
+          logo={require("./../../assets/logo-filled.png")}
           message="Please sideload your addin to see app body."
         />
       );
     }
     return (
       <div className="ms-welcome">
-        <Header logo={require("./../../../assets/logo-filled.png")} title={this.props.title} message="Welcome" />
+        <Header logo={require("./../../assets/logo-filled.png")} title={this.props.title} message="Welcome" />
         <Page
           fieldMessage={this.state.fieldMessage}
           fieldItems={this.state.fieldItems}
